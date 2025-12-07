@@ -2,344 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Auto Lots Solar by Sol Solar - Canopies, Storage, EV-Ready, Referral Profits</title>
+  <title>Sol Solar | Solar Canopies, Storage, EV-Ready Lots</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Solar canopies and storage for auto dealerships, car lots, RV/boat yards, and EV-ready sites plus a high-yield referral program on residential solar.">
-  <meta property="og:title" content="Auto Lots Solar - Shade, Storage, EV-Ready, Referral Profits">
-  <meta property="og:description" content="Dealers and lots: cut bills, add canopies, storage, EV readiness, and earn $2.5k+ per residential solar referral. Book a 15-minute assessment.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://example.com/">
-  <meta name="twitter:card" content="summary_large_image">
-  <style>
-    :root {
-      --bg: #05070d;
-      --panel: #0b1323;
-      --panel-2: #0f1b30;
-      --text: #f8fafc;
-      --muted: #cbd5e1;
-      --accent: #f59e0b;
-      --accent-2: #38bdf8;
-      --border: rgba(148,163,184,0.35);
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-      background:
-        radial-gradient(circle at 12% 18%, rgba(245,158,11,0.08), transparent 32%),
-        radial-gradient(circle at 82% 8%, rgba(56,189,248,0.12), transparent 36%),
-        var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
-    a { color: #7dd3fc; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .page { max-width: 1200px; margin: 0 auto; padding: 20px 16px 80px; }
-    header {
-      position: sticky; top: 0; z-index: 10;
-      background: linear-gradient(180deg, rgba(5,7,13,0.96), rgba(5,7,13,0.82));
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(148,163,184,0.08);
-      padding: 14px 0;
-      margin-bottom: 28px;
-    }
-    .nav { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
-    .brand { font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; font-size: 13px; }
-    .nav-links { display: flex; gap: 14px; flex-wrap: wrap; font-size: 13px; opacity: 0.9; }
-    h1 { font-size: clamp(32px, 4vw, 44px); line-height: 1.1; margin: 0 0 12px; }
-    h2 { font-size: 24px; margin: 0 0 12px; }
-    p { margin: 0 0 14px; color: var(--muted); }
-    .hero { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(0,1fr); gap: 28px; align-items: center; padding: 8px 0 36px; }
-    @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .nav { flex-direction: column; align-items: flex-start; } }
-    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 12px 0 18px; }
-    .pill { display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border-radius: 999px; border: 1px solid var(--border); background: rgba(15,23,42,0.6); font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; }
-    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 12px 0 6px; }
-    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 12px 18px; border-radius: 999px; font-weight: 700; font-size: 14px; border: 1px solid transparent; cursor: pointer; text-decoration: none; transition: transform 120ms ease, box-shadow 120ms ease, border-color 120ms ease; }
-    .btn-primary { background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #0b1220; box-shadow: 0 12px 34px rgba(56,189,248,0.25); }
-    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 16px 40px rgba(56,189,248,0.32); }
-    .btn-secondary { background: rgba(15,23,42,0.85); border-color: var(--border); color: #e2e8f0; }
-    .btn-secondary:hover { border-color: #94a3b8; transform: translateY(-1px); }
-    .hero-visual { border-radius: 20px; padding: 18px; border: 1px solid rgba(148,163,184,0.5); background: radial-gradient(circle at 10% 12%, rgba(245,158,11,0.1), rgba(245,158,11,0.02)), radial-gradient(circle at 80% 10%, rgba(56,189,248,0.12), rgba(56,189,248,0.02)), var(--panel); box-shadow: 0 24px 70px rgba(15,23,42,0.85); }
-    .pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
-    section { padding: 26px 0; border-top: 1px solid rgba(148,163,184,0.08); }
-    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); margin-top: 14px; }
-    .card { background: var(--panel); border: 1px solid rgba(31,41,55,0.9); border-radius: 16px; padding: 16px; box-shadow: 0 16px 40px rgba(15,23,42,0.65); transition: transform 120ms ease, border-color 120ms ease, box-shadow 120ms ease; }
-    .card:hover { transform: translateY(-3px); border-color: #38bdf8; box-shadow: 0 22px 46px rgba(56,189,248,0.18); }
-    .two-col { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 18px; margin-top: 12px; }
-    @media (max-width: 920px) { .two-col { grid-template-columns: 1fr; } }
-    form { display: grid; gap: 12px; margin-top: 8px; }
-    label { font-size: 13px; color: #e2e8f0; display: block; margin-bottom: 4px; }
-    input, select, textarea { width: 100%; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--border); background: rgba(15,23,42,0.9); color: #e5e7eb; font-size: 14px; }
-    textarea { min-height: 90px; resize: vertical; }
-    .checkbox-row { display: flex; align-items: flex-start; gap: 8px; font-size: 12px; color: #cbd5e1; }
-    .checkbox-row input { width: 16px; height: 16px; margin-top: 2px; }
-    .form-status { font-size: 13px; display: none; }
-    .form-status.ok { color: #bbf7d0; }
-    .form-status.err { color: #fca5a5; }
-    .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 14px; margin-top: 10px; }
-    .step-number { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; opacity: 0.7; }
-    .kpi { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px,1fr)); gap: 10px; margin-top: 10px; }
-    .kpi .card { text-align: left; }
-    .kpi strong { font-size: 20px; color: #f8fafc; }
-    .faq-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 12px; margin-top: 10px; }
-    .ribbon { margin: 0 -16px 14px; padding: 10px 16px; border-radius: 12px; background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.35); color: #fbbf24; font-weight: 700; font-size: 13px; }
-    .note { font-size: 13px; color: #cbd5e1; opacity: 0.92; }
-    footer { padding-top: 24px; border-top: 1px solid rgba(148,163,184,0.08); font-size: 12px; color: #cbd5e1; }
-    .media-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap: 14px; margin-top: 12px; }
-    .media-card { background: var(--panel); border: 1px solid rgba(31,41,55,0.9); border-radius: 14px; overflow: hidden; box-shadow: 0 16px 36px rgba(15,23,42,0.6); }
-    .media-img { width: 100%; display: block; height: 180px; object-fit: cover; }
-    .media-caption { padding: 10px 12px; font-size: 13px; color: var(--muted); }
-    .video-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px,1fr)); gap: 14px; margin-top: 12px; }
-    .video-frame { position: relative; padding-bottom: 56.25%; height: 0; border-radius: 12px; overflow: hidden; border: 1px solid rgba(148,163,184,0.4); background: #0f1b30; box-shadow: 0 16px 36px rgba(15,23,42,0.6); }
-    .video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
-  </style>
+  <meta name="description" content="Solar canopies, batteries, EV make-ready, and referral revenue for auto lots, fleets, RV/boat yards, and commercial sites.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="page">
     <header>
       <div class="nav" aria-label="Primary">
-        <div class="brand">Sol Solar - Auto Lots, Canopies, Storage</div>
+        <div class="brand">Sol Solar</div>
         <nav class="nav-links">
-          <a href="#why">Value</a>
-          <a href="#who">Fits</a>
-          <a href="#calc">Savings</a>
-          <a href="#process">Process</a>
-          <a href="#proof">Proof</a>
-          <a href="#media">Media</a>
-          <a href="#referral">Referral</a>
-          <a href="#cta">Book</a>
+          <a aria-current="page" href="index.html">Home</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="products.html">Packages</a>
+          <a href="referrals.html">Referral</a>
+          <a href="contact.html">Contact</a>
         </nav>
       </div>
     </header>
 
-    <div class="ribbon">Auto dealers, car lots, RV/boat yards: solar canopies + storage + EV readiness. Residential referral revenue included.</div>
+    <div class="ribbon">Dealers, fleets, RV/boat yards: shade canopies + batteries + EV readiness + referral revenue.</div>
 
     <main>
       <section class="hero">
         <div>
-          <h1>Shade Your Lot, Cut Bills, Add Storage and EV Readiness</h1>
-          <p class="hero-sub">Solar canopies and batteries built for auto dealers, car lots, and RV/boat yards. Keep cars cool, lower bills, tame demand charges, and future-proof with EV.</p>
+          <h1>Build the EV-Ready, Shaded, Low-OPEX Lot</h1>
+          <p class="hero-sub">We design and build solar canopies, right-sized battery storage, and charger-ready infrastructure that lower bills and protect your inventory.</p>
           <div class="badge-row">
-            <span class="pill">Auto Dealers</span>
-            <span class="pill">Independent Lots</span>
-            <span class="pill">RV / Boat Yards</span>
-            <span class="pill">EV-Ready Sites</span>
-            <span class="pill">Storage for Peaks</span>
+            <span class="pill">Canopies</span>
+            <span class="pill">Storage</span>
+            <span class="pill">EV Make-Ready</span>
+            <span class="pill">Referral Revenue</span>
           </div>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="#cta">Book a 15-Min Lot Assessment</a>
-            <a class="btn btn-secondary" href="#calc">Estimate My Savings</a>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="solutions.html">View Solutions</a>
+            <a class="btn btn-secondary" href="contact.html">Book a Lot Assessment</a>
           </div>
-          <div class="note">We scope canopies, batteries, EV make-ready, and incentives so ownership and finance have a decision-ready plan.</div>
+          <p class="small">Decision-ready models in days. Finance, PPA/lease, or cash options.</p>
         </div>
         <div class="hero-visual">
           <h3>What We Deliver</h3>
           <div class="pill-row">
-            <span class="pill">Shade Canopies</span>
-            <span class="pill">Battery for Peaks</span>
-            <span class="pill">EV / Charger Ready</span>
-            <span class="pill">Lot Lighting Offset</span>
-            <span class="pill">Referral Revenue</span>
+            <span class="pill">Shade & Cooling</span>
+            <span class="pill">Demand Charge Relief</span>
+            <span class="pill">Charger Prep</span>
+            <span class="pill">Resilience</span>
+            <span class="pill">Marketing Pop</span>
           </div>
-          <p style="margin-top:12px;">You get a clear model: capex vs. PPA/lease, incentives, canopy design, battery sizing, EV conduit, timeline, and expected IRR.</p>
+          <p style="margin-top:12px;">Stamped engineering, incentive stacking, phased construction, and monitoring—packaged so finance and ownership can say yes.</p>
         </div>
       </section>
 
-      <section id="why">
-        <h2>Why Solar Canopies + Storage for Dealers</h2>
-        <div class="kpi">
-          <div class="card"><strong>15-25%</strong><br><span class="note">Typical first-year bill reduction with canopies</span></div>
-          <div class="card"><strong>30-50%</strong><br><span class="note">Demand charge cuts with storage and peak shaving</span></div>
-          <div class="card"><strong>3-6 yr</strong><br><span class="note">Simple payback with ITC, depreciation, and local rebates</span></div>
-          <div class="card"><strong>Referral $</strong><br><span class="note">Earn on residential solar leads from your buyers</span></div>
-        </div>
-        <p style="margin-top:10px;">We map your tariff, lighting/HVAC load, canopy square footage, and storage/EV needs to present a decision-ready package for ownership and finance.</p>
-      </section>
-
-      <section id="who">
-        <h2>Who This Is For</h2>
+      <section>
+        <h2>Everything We Sell, At a Glance</h2>
         <div class="grid">
-          <div class="card"><h3>Auto Dealers & Groups</h3><p>Shade inventory, lower HVAC/lighting costs, prep for EV chargers.</p></div>
-          <div class="card"><h3>Independent Used Lots</h3><p>Low-friction canopies and batteries to stabilize bills and add shade value.</p></div>
-          <div class="card"><h3>RV / Boat Yards</h3><p>Large-span canopies with storage to protect inventory and cut peaks.</p></div>
-          <div class="card"><h3>Fleet & EV Ready Sites</h3><p>Solar + storage with conduit for future Level 2/fast chargers.</p></div>
-          <div class="card"><h3>Multi-Lot Owners</h3><p>Standardize contracts across lots with long-term favorable terms.</p></div>
-          <div class="card"><h3>Referral Partners</h3><p>Earn on residential solar leads from your buyers and service customers.</p></div>
-        </div>
-      </section>
-
-      <section id="calc">
-        <h2>See Your Savings in Minutes</h2>
-        <div class="two-col">
-          <div>
-            <p>Upload a recent utility bill (PDF or photo) and tell us your address and load profile. We return a concise model with: system size, canopy layout, storage strategy, incentives, demand-charge approach, and simple payback.</p>
-            <p class="note">No obligation. We use your actual tariff, lot size/canopy plan, hours, storage needs, and EV ambitions.</p>
-          </div>
-          <div>
-            <form id="lead-form">
-              <div><label for="name">Full Name *</label><input id="name" name="name" required></div>
-              <div><label for="company">Company *</label><input id="company" name="company" required></div>
-              <div><label for="email">Work Email *</label><input id="email" type="email" name="email" required></div>
-              <div><label for="phone">Mobile / Direct Line *</label><input id="phone" name="phone" required pattern="[- +()0-9]{7,}"></div>
-              <div><label for="location">Lot Address or City/State *</label><input id="location" name="location" required></div>
-              <div><label for="load">Monthly kWh or Avg Bill ($)</label><input id="load" name="load" placeholder="e.g., 40,000 kWh or $9,500"></div>
-              <div><label for="tariff">Utility & Tariff</label><input id="tariff" name="tariff" placeholder="e.g., SCE TOU-8-B or Oncor GS-2"></div>
-              <div><label for="priority">Top priority</label><select id="priority" name="priority">
-                <option>Lower OPEX</option><option>Demand charge relief</option><option>Shade canopies</option><option>EV/charger readiness</option><option>Resilience / outage protection</option></select></div>
-              <div><label for="notes">Notes (stall count, canopy interest, storage kWh, EV plans)</label><textarea id="notes" name="notes"></textarea></div>
-              <div class="checkbox-row"><input id="upload" type="checkbox" name="upload"><label for="upload">I will email or share a recent utility bill for modeling.</label></div>
-              <div class="checkbox-row"><input id="referral" type="checkbox" name="referral"><label for="referral">Interested in residential solar referral revenue for buyers/clients.</label></div>
-              <button type="submit" class="btn btn-primary" style="width:100%;">Get My Savings Model</button>
-              <div id="success-message" class="form-status ok">Thanks! We have your details and will send your model.</div>
-              <div id="form-status" class="form-status"></div>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <section id="process">
-        <h2>Our Process for Auto Lots</h2>
-        <div class="steps">
-          <div class="card"><div class="step-number">Step 1</div><h3>15-Min Assessment</h3><p>Review tariff, bill, stall count, and canopy layout. Flag storage/EV needs.</p></div>
-          <div class="card"><div class="step-number">Step 2</div><h3>Financial Model</h3><p>System size, canopy spans, storage strategy, incentives, IRR, payback, and PPA/lease/cash options.</p></div>
-          <div class="card"><div class="step-number">Step 3</div><h3>Design & Permitting</h3><p>Stamped engineering, interconnection, structural review, and AHJ approvals with milestones.</p></div>
-          <div class="card"><div class="step-number">Step 4</div><h3>Build & Commission</h3><p>Construction in phases to keep the lot selling. QA, PTO, and monitoring included.</p></div>
-        </div>
-      </section>
-
-      <section id="proof">
-        <h2>Proof and Credibility</h2>
-        <div class="grid">
-          <div class="card"><h3>Auto Group | 720 kW Canopy</h3><p>Shaded 180 stalls, HVAC/lighting offset 19%, battery shaved peaks by 32%.</p></div>
-          <div class="card"><h3>Independent Lot | 280 kW</h3><p>Cash-positive PPA, added EV conduit, structured weekend-only construction.</p></div>
-          <div class="card"><h3>RV / Boat Yard | 450 kW + Storage</h3><p>Protected high-value inventory, demand charges down 41%, 5.2-year payback with ITC/depr.</p></div>
-          <div class="card"><h3>Referral Program</h3><p>Dealers earn per residential solar lead closed; adds recurring revenue without new headcount.</p></div>
-        </div>
-        <p class="note" style="margin-top:10px;">Want more detail? We can share anonymized pro formas, canopy layouts, and production data under NDA.</p>
-      </section>
-
-      <section id="media">
-        <h2>See Canopies, Storage, and EV-Ready Lots</h2>
-        <div class="media-grid">
-          <div class="media-card">
-            <img class="media-img" src="https://images.unsplash.com/photo-1509395062183-67c5ad6faff9?auto=format&fit=crop&w=1400&q=80" alt="Solar canopy over parking lot">
-            <div class="media-caption">Solar canopies shading inventory while offsetting lighting and HVAC.</div>
-          </div>
-          <div class="media-card">
-            <img class="media-img" src="https://images.unsplash.com/photo-1610465299990-30e1e4d3260a?auto=format&fit=crop&w=1400&q=80" alt="EV-ready parking with conduit">
-            <div class="media-caption">EV make-ready: conduit and capacity sized for future chargers.</div>
-          </div>
-          <div class="media-card">
-            <img class="media-img" src="https://images.unsplash.com/photo-1582719478171-2f2df46f3c90?auto=format&fit=crop&w=1400&q=80" alt="Battery storage for demand charge management">
-            <div class="media-caption">Battery storage to shave peaks and keep critical loads online.</div>
-          </div>
-        </div>
-        <div class="video-grid">
-          <div class="video-frame">
-            <iframe loading="lazy" src="https://www.youtube.com/embed/2JYRnT0qqko" title="Solar canopy walkthrough" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="video-frame">
-            <iframe loading="lazy" src="https://www.youtube.com/embed/7xZ9hqhsyPY" title="Battery and demand charge management demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-          <div class="video-frame">
-            <iframe loading="lazy" src="https://www.youtube.com/embed/dg9dE1jL0O8" title="EV-ready lot and charger prep" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-          </div>
-        </div>
-      </section>
-
-      <section id="referral">
-        <h2>Supreme Referral Vehicle (Residual Revenue)</h2>
-        <div class="two-col">
-          <div>
-            <p>Turn every buyer and service customer into long-term revenue. We handle residential solar sales, design, and install. You earn per closed project with tiers for volume.</p>
-            <p class="note">Designed for small and mid-size lots: simple process, no extra headcount, co-branded link.</p>
+          <div class="card">
+            <h3>Solar Shade Canopies</h3>
+            <p>Span the stalls you rely on most with engineered structures that cut HVAC/lighting load and add curb appeal.</p>
+            <div class="cta-row"><a class="btn btn-secondary" href="solutions.html#canopies">See canopy options</a></div>
           </div>
           <div class="card">
-            <h3>Deal Structure</h3>
-            <ul style="margin:8px 0 0 18px; color: var(--muted);">
-              <li>$2,500 per residential system > 10 kW</li>
-              <li>Volume bonus: 7+ closed deals/month unlocks higher tiers (ask for current schedule)</li>
-              <li>We manage the homeowner journey end-to-end</li>
-            </ul>
-            <div class="cta-row" style="margin-top:12px;">
-              <a class="btn btn-secondary" href="#cta">Request Referral Terms</a>
-            </div>
+            <h3>Battery Storage</h3>
+            <p>Peak shaving, outage coverage, and tariff-optimized dispatch sized to your profile.</p>
+            <div class="cta-row"><a class="btn btn-secondary" href="solutions.html#storage">Dial in storage</a></div>
+          </div>
+          <div class="card">
+            <h3>EV Make-Ready</h3>
+            <p>Conduit, capacity, and panels ready for L2/fast chargers without ripping up the lot later.</p>
+            <div class="cta-row"><a class="btn btn-secondary" href="solutions.html#ev">Prep for EV</a></div>
+          </div>
+          <div class="card">
+            <h3>Referral Revenue</h3>
+            <p>Turn every buyer and service customer into recurring residential solar revenue—no new headcount.</p>
+            <div class="cta-row"><a class="btn btn-secondary" href="referrals.html">Earn per lead</a></div>
           </div>
         </div>
       </section>
 
-      <section id="faq">
-        <h2>Common Questions</h2>
-        <div class="faq-grid">
-          <div class="card"><h3>Do you offer PPA/lease or cash?</h3><p>Yes. We model cash, lease, and PPA with your cost of capital and tax position.</p></div>
-          <div class="card"><h3>Can you phase construction?</h3><p>Yes. We phase around sales peaks (weekends/late evenings) to keep the lot open.</p></div>
-          <div class="card"><h3>What about structure and drainage?</h3><p>We engineer for wind/snow, drainage, lighting integration, and EV conduit.</p></div>
-          <div class="card"><h3>Can we add EV chargers later?</h3><p>We stub conduit and capacity so Level 2/fast chargers can be added without rework.</p></div>
-          <div class="card"><h3>Referral program details?</h3><p>$2.5k per residential system >10 kW; bonuses for 7+ deals/month. We sell and install; you share your co-branded link.</p></div>
+      <section>
+        <h2>Who We Serve</h2>
+        <div class="grid">
+          <div class="card"><h3>Auto Dealers & Groups</h3><p>Shade inventory, keep showrooms cool, and get EV-ready.</p></div>
+          <div class="card"><h3>Independent Lots</h3><p>Low-friction installs with cash, lease, or PPA options.</p></div>
+          <div class="card"><h3>RV / Boat Yards</h3><p>Large-span canopies and storage to protect high-value stock.</p></div>
+          <div class="card"><h3>Fleet Sites</h3><p>Solar + storage + charger prep for growing electric fleets.</p></div>
         </div>
       </section>
 
-      <section id="cta">
-        <h2>Book Your Auto Lot Solar Assessment</h2>
-        <p>15 minutes. Decision-ready in days. Shade + storage + EV readiness + referral revenue.</p>
+      <section>
+        <h2>Proof Points</h2>
+        <div class="kpi">
+          <div class="card"><strong>15-25%</strong><br><span class="note">Typical first-year bill reduction with canopies</span></div>
+          <div class="card"><strong>30-50%</strong><br><span class="note">Demand charge cuts with storage</span></div>
+          <div class="card"><strong>3-6 yr</strong><br><span class="note">Simple payback with ITC + depreciation</span></div>
+          <div class="card"><strong>$2.5k+</strong><br><span class="note">Per closed residential referral</span></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Ready to See Your Model?</h2>
         <div class="cta-row">
-          <a class="btn btn-primary" href="https://calendly.com/your-calendly/15min" target="_blank" rel="noopener">Schedule on Calendly</a>
-          <a class="btn btn-secondary" href="tel:+11234567890">Call Now</a>
-          <a class="btn btn-secondary" href="#lead-form">Send Bill & Site Details</a>
+          <a class="btn btn-primary" href="contact.html">Send Bill & Site Details</a>
+          <a class="btn btn-secondary" href="products.html">Browse Packages</a>
+          <a class="btn btn-secondary" href="referrals.html">Referral Program</a>
         </div>
       </section>
     </main>
 
     <footer>
-      &copy; <span id="year"></span> Sol Solar. Canopies, storage, EV readiness, and referral revenue for auto lots.
+      &copy; <span id="year" data-year></span> Sol Solar. Canopies, storage, EV readiness, and referral revenue.
     </footer>
   </div>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    // Form handler (Formspree placeholder)
-    const form = document.getElementById('lead-form');
-    const successMessage = document.getElementById('success-message');
-    const statusBox = document.getElementById('form-status');
-    const submitBtn = form.querySelector('button[type="submit"]');
-
-    const FORM_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID'; // replace with your endpoint
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      statusBox.style.display = 'none';
-      statusBox.textContent = '';
-
-      if (FORM_ENDPOINT.includes('YOUR_FORM_ID')) {
-        statusBox.textContent = 'Add your Formspree endpoint to activate submissions.';
-        statusBox.className = 'form-status err';
-        statusBox.style.display = 'block';
-        return;
-      }
-
-      const formData = new FormData(form);
-      submitBtn.disabled = true;
-      const original = submitBtn.textContent;
-      submitBtn.textContent = 'Sending...';
-
-      try {
-        const response = await fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Accept': 'application/json' }, body: formData });
-        if (!response.ok) throw new Error('Form submit failed');
-        successMessage.style.display = 'block';
-        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        form.reset();
-      } catch (err) {
-        statusBox.textContent = 'Could not send. Please try again or email us.';
-        statusBox.className = 'form-status err';
-        statusBox.style.display = 'block';
-      } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = original;
-      }
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-

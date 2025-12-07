@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Sol Solar | Book a Lot Assessment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Send your utility bill, stall count, and EV goals for a fast solar canopy and storage model.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="nav" aria-label="Primary">
+        <div class="brand">Sol Solar</div>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="solutions.html">Solutions</a>
+          <a href="products.html">Packages</a>
+          <a href="referrals.html">Referral</a>
+          <a aria-current="page" href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+
+    <section class="hero-mini">
+      <h1>Book a Lot Assessment</h1>
+      <p>15 minutes. We return a decision-ready model: canopy layout, storage plan, EV readiness, incentives, and payback.</p>
+    </section>
+
+    <section>
+      <h2>Send Your Details</h2>
+      <div class="two-col">
+        <div>
+          <p>Upload a recent utility bill and share your priorities. We map tariff, stall count, hours, and EV ambition into a simple package for ownership and finance.</p>
+          <ul class="list">
+            <li>Cash, PPA/lease, or finance options modeled</li>
+            <li>Construction phasing to keep the lot open</li>
+            <li>Co-branded referral link if you want residential revenue</li>
+          </ul>
+        </div>
+        <div>
+          <form data-endpoint="https://formspree.io/f/YOUR_FORM_ID">
+            <div><label for="name">Full Name *</label><input id="name" name="name" required></div>
+            <div><label for="company">Company *</label><input id="company" name="company" required></div>
+            <div><label for="email">Work Email *</label><input id="email" type="email" name="email" required></div>
+            <div><label for="phone">Mobile / Direct Line *</label><input id="phone" name="phone" required pattern="[- +()0-9]{7,}"></div>
+            <div><label for="location">Lot Address or City/State *</label><input id="location" name="location" required></div>
+            <div><label for="load">Monthly kWh or Avg Bill ($)</label><input id="load" name="load" placeholder="e.g., 40,000 kWh or $9,500"></div>
+            <div><label for="priority">Top priority</label><select id="priority" name="priority"><option>Lower OPEX</option><option>Demand charge relief</option><option>Shade canopies</option><option>EV/charger readiness</option><option>Resilience / outage protection</option></select></div>
+            <div><label for="notes">Notes (stall count, canopy interest, storage kWh, EV plans)</label><textarea id="notes" name="notes"></textarea></div>
+            <div class="checkbox-row"><input id="upload" type="checkbox" name="upload"><label for="upload">I will email or share a recent utility bill for modeling.</label></div>
+            <div class="checkbox-row"><input id="referral" type="checkbox" name="referral"><label for="referral">Interested in residential solar referral revenue for buyers/clients.</label></div>
+            <button type="submit" class="btn btn-primary" style="width:100%;">Get My Savings Model</button>
+            <div class="form-status ok">Thanks! We have your details and will send your model.</div>
+            <div class="form-status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Talk Now</h2>
+      <div class="card">
+        <p><strong>Call:</strong> <a href="tel:+11234567890">(123) 456-7890</a></p>
+        <p><strong>Email:</strong> <a href="mailto:hello@solsolar.com">hello@solsolar.com</a></p>
+        <p class="note">Send a utility bill and stall count for the fastest response.</p>
+      </div>
+    </section>
+
+    <footer>
+      &copy; <span data-year></span> Sol Solar. Canopies, storage, EV readiness, and referral revenue.
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
